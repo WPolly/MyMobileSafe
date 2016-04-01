@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/AppTitleStyle"
+        android:text="进程管理" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_process_on_running"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在运行的进程: "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#55000000" />
+
+        <TextView
+            android:id="@+id/tv_meminfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用内存/总内存"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1000" >
+
+        <!-- 为什么没有将progressbar遮挡? -->
+
+
+        <!--
+        project-clean 作用 :(Java老馆回答)
+其实主要作用就是把编译好的class等文件删除，激活eclipse的自动编译。
+解决的问题就是，有时候你把代码改了，但因为一些未知的原因，eclipse的自动编译没有成功，导致运行结果不正常。
+当你的工程出现一些莫名其妙的错误时（当然不是语法错误），用一下这个功能，效果不错的
+        -->
+
+        <ListView
+            android:id="@+id/lv_task_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wlkk" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/ll_taskinfo_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载.."
+                android:textColor="#88000000" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_update_task_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#88000000"
+            android:text="用户进程: "
+            android:textColor="#ffffff" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_select_all"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_task_manager"
+            android:text="全选"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/bt_select_ops"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_task_manager"
+            android:text="反选"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/bt_clean_task"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_task_manager"
+            android:text="清理"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>

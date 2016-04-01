@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">MyMobileSafe</string>
+    <string name="tv_verson1">版本: 1.0</string>
+    <string name="home_function_list">功能列表</string>
+    <string name="marquee_content">你是一树一树的花开,是燕在梁间呢喃;你是爱,是暖,是希望,你是人间的四月天.</string>
+    <string name="setting_center">设置中心</string>
+    <string name="sample_device_admin_description">开启后可以使用远程锁屏清除数据的功能</string>
+    <string name="sample_device_admin">远程锁屏</string>
+    <string name="anti_virus">"杀毒软件的工作原理：\n\n1.什么是计算机病毒？\n特殊的程序，运行起来才能成为病毒，如果没有运行就是一个普通的文件。\n是否具有恶意性。\n\n盗号的木马。\n窃取隐私。\n敲诈\n具有恶意性的特殊的软件，如果没有运行，就是一个特殊的文件。\n\n2. 如何查杀病毒。\nkv-20 ： kill-virus 20个\nkv300+，也是一个病毒。\n\n传统杀毒软件的工作原理： \n扫描硬盘上的每个文件，分析这些文件特征码，\n查看病毒文件的特征是否在病毒数据库存在。\n校验文件的md5 sha1签名。\n算法提权软件的关键信息。\n遍历文件里面的字符串。http://\n\n3.查杀已知的病毒，不能查杀新的未知病毒。\n主动防御：检查软件的行为。\n\n\n杀毒软件的病毒库是怎么收集的。\n服务器集群，主节点。蜜罐。\n互联网云安全计划。 \n\n杀毒引擎，优化后的一个数据库查询算法：\n病毒数据库2000万条数据。\n电脑上900万个文件 分类 .mp3 .jpg .txt .exe .cmd .msi .dll\n\n            "</string>
+
+</resources>

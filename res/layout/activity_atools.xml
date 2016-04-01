@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/AppTitleStyle"
+        android:text="高级工具" />
+
+    <TextView
+        android:id="@+id/tv_phone_address_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/emoji_0x1f50d"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="号码归属地查询"
+        android:textSize="21sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#33000000" />
+
+    <TextView
+        android:id="@+id/tv_backup_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/d_doge"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:text="短信备份"
+        android:textSize="21sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#33000000" />
+
+    <TextView
+        android:id="@+id/tv_restore_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/d_miao"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:text="短信还原"
+        android:textSize="21sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#33000000" />
+
+</LinearLayout>

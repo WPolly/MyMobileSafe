@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/anti_virus" />
+    </ScrollView>
+
+    <SlidingDrawer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@+id/my_content"
+        android:handle="@+id/my_handle" >
+
+        <ImageView
+            android:id="@+id/my_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xiaogou" />
+
+        <LinearLayout
+            android:id="@+id/my_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#33000000"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是你的content" />
+
+            <Button
+                android:id="@+id/bt_test2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="content测试按钮" />
+        </LinearLayout>
+    </SlidingDrawer>
+
+</FrameLayout>

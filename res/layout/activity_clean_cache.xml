@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        style="@style/AppTitleStyle"
+        android:text="缓存清理" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+             
+        <ProgressBar 
+            android:id="@+id/pb_clean_cache"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/my_progressbar"/>
+        
+        <TextView
+            android:id="@+id/tv_clean_cache_stats"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:gravity="center_vertical"
+            android:text="正在扫描.."
+            android:textColor="#000000" />
+            
+        </FrameLayout>
+        
+        <ListView 
+            android:id="@+id/lv_cache_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:background="@drawable/cache_bg">
+        </ListView>
+        
+        <Button 
+            android:id="@+id/bt_clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="清除全部缓存"
+            android:background="@drawable/button_cool"/>
+       
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xiaoshan="http://schemas.android.com/apk/res/com.xiaoshan.mymobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/AppTitleStyle"
+        android:text="@string/setting_center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.xiaoshan.mymobilesafe.ui.SettingItemView
+                android:id="@+id/siv_check_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xiaoshan:desc_off="自动检查更新已关闭"
+                xiaoshan:desc_on="自动检查更新已开启"
+                xiaoshan:title="自动检查更新" />
+
+            <com.xiaoshan.mymobilesafe.ui.SettingItemView
+                android:id="@+id/siv_set_callsms_safe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xiaoshan:desc_off="黑名单拦截功能已关闭"
+                xiaoshan:desc_on="黑名单拦截功能已开启"
+                xiaoshan:title="黑名单拦截" />
+
+            <com.xiaoshan.mymobilesafe.ui.SettingItemView
+                android:id="@+id/siv_auto_clean_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xiaoshan:desc_off="锁屏自动清理后台进程已关闭"
+                xiaoshan:desc_on="锁屏自动清理后台进程已开启"
+                xiaoshan:title="自动清理后台进程" />
+
+            <com.xiaoshan.mymobilesafe.ui.SettingItemView
+                android:id="@+id/siv_watch_dog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xiaoshan:desc_off="程序锁看门狗已关闭"
+                xiaoshan:desc_on="程序锁看门狗已开启"
+                xiaoshan:title="程序锁" />
+
+            <com.xiaoshan.mymobilesafe.ui.SettingSelectView
+                android:id="@+id/ssv_set_watch_dog_psd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xiaoshan:desc="110"
+                xiaoshan:title="程序锁密码" />
+
+            <com.xiaoshan.mymobilesafe.ui.SettingItemView
+                android:id="@+id/siv_set_show_incoming_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xiaoshan:desc_off="来电归属地显示已关闭"
+                xiaoshan:desc_on="来电归属地显示已开启"
+                xiaoshan:title="显示来电归属地" />
+
+            <com.xiaoshan.mymobilesafe.ui.SettingSelectView
+                android:id="@+id/ssv_incoming_call_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xiaoshan:desc="卫士蓝"
+                xiaoshan:title="号码归属地显示风格" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
